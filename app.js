@@ -28,10 +28,18 @@ boxes.forEach((box)=>{
         if(turnO){
             box.innerText = "O";
             turnO=false;
+             box.style.borderRadius = "50%";
+        box.style.transition = "1s ease";
+           
         }
         else{
             box.innerText = "X";
             turnO=true;
+            box.style.transition = "1s ease";
+            box.style.transform = "rotate(45deg)";
+           box.style.height = "25%";
+           box.style.width = "25%";
+
         }
         box.disabled=true;
         
